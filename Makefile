@@ -6,6 +6,9 @@ travisbuild: zip crx
 updatepsl:
 	scripts/updatepsl.sh
 
+updateseed:
+	scripts/updateseeddata.sh
+
 zip:
 	scripts/makezip.sh 
 
@@ -27,4 +30,4 @@ upload:
 lint:
 	./node_modules/.bin/eslint .
 
-.PHONY: build travisbuild updatepsl zip crx todo logging lint
+.PHONY: build travisbuild updatepsl updateseed zip crx todo logging lint
